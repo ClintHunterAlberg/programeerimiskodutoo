@@ -1,0 +1,38 @@
+# Progemise iseseisev töö nr 2
+# Clint Hunter Alberg ITT-20
+
+#2 Iseseisev töö
+
+#Bussid
+
+inimeste_arv=int(input("Sisestage inimeste arv "))
+kohtade_arv=int(input("Sisestage bussi kohtade arv "))
+busside_arv=0
+if inimeste_arv <= kohtade_arv:
+        busside_arv=busside_arv+1
+        print("Busse vaja: ",busside_arv)
+        print("Viimases bussis inimesi: ",inimeste_arv)
+while kohtade_arv < inimeste_arv:
+    inimeste_arv=inimeste_arv-kohtade_arv
+    busside_arv=busside_arv+1
+    if inimeste_arv <= kohtade_arv:
+        busside_arv=busside_arv+1
+        print("Busse vaja: ",busside_arv)
+        print("Viimases bussis inimesi: ",inimeste_arv)
+
+
+#Äratus
+
+mitu_korda=int(input("Sisestage mitu korda äratada: "))
+while 0 < mitu_korda:
+    print("Tõuse ja sära!")
+    mitu_korda=mitu_korda - 1
+
+#Täringud
+
+from random import randint
+täringute_arv=int(input("Sisestage täringute arvu "))
+while 0 < täringute_arv:
+    suvaline_arv=randint(1,6)
+    täringute_arv=täringute_arv-1
+    print(suvaline_arv)

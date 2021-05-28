@@ -1,0 +1,34 @@
+# Progemine iseseisev töö nr 1
+# Clint Hunter Alber ITT-20
+
+#Kodutöö 1
+
+#Tervitus
+
+print("Tere, maailm!")
+
+#Aasta liblikas
+
+aasta=2020
+liblikas="teelehemosaiikliblikas"
+lause_keskosa=". aasta liblikas on "
+lause=str(aasta)+lause_keskosa+liblikas
+print(lause)
+
+#Astendamine
+
+aluse=input("Sisestage astme alus: ")
+astendaja=input("Sisestage astendaja: ")
+print(int(aluse)**int(astendaja))
+
+#Trahv
+
+nimi=input("Sisestage oma nimi: ")
+lubatud_kiirus=input("Sisestage lubatud kiirus (km/h): ")
+tegelik_kiirus=input("Sisestage tegelik kiirus (km/h): ")
+kiiruse_vahe=(int(tegelik_kiirus))-(int(lubatud_kiirus))
+trahv=kiiruse_vahe*3
+def MIN(trahv):
+    return (min(trahv))
+trahv = set([190,trahv])
+print(nimi+", kiiruse ületamise eest on teie trahv "+(str(MIN(trahv)))+" eurot.")
